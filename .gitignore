@@ -1,0 +1,7 @@
+emotion_app/emotion_model.pkl
+*.pkl
+Emotion/
+*.wav
+venv/
+.env
+__pycache__/
