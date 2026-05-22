@@ -40,7 +40,7 @@ def load_assets():
 model, scaler = load_assets()
 
 emotions = {
-1: 'neutral', 2: 'happy', 3: 'sad', 4: 'angry', 5: 'fearful', 6: 'disgust', 7: 'surprised'
+0: 'neutral', 1: 'happy', 2: 'sad', 3: 'angry', 4: 'fearful', 5: 'disgust', 6: 'surprised'
 }
 
 uploaded_file = st.file_uploader("Виберіть файл (WAV, MP3)", type=['wav', 'mp3'])
@@ -74,8 +74,10 @@ if uploaded_file is not None:
                 labels = [emotions.get(c, c) for c in model.classes_]
     
                 fig, ax = plt.subplots()
-                bars = ax.bar(labels, probabilities, color='#5B7E3C')
-                
+                x_positions = np.arange(len(labels))
+
+                bars = ax.bar(x_positions,  probabilities, color='#5B7E3C')
+                ax.set_xticks(x_positions)
                 ax.set_xticklabels(labels, rotation=0, fontsize=10)
                 ax.set_ylabel('Ймовірність')
                 
