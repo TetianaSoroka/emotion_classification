@@ -10,4 +10,4 @@ Features:
 The model was trained on the "Emotions" dataset.
 You can download the raw audio files here: https://www.kaggle.com/datasets/uldisvalainis/audio-emotions?resource=download-directory
 
-You can download models file: here https://drive.google.com/drive/folders/1QIafhUO7L4bGTrJ-ihM_oXmIc8dMS-0l?usp=drive_link
+You can download models file here: https://drive.google.com/drive/folders/1QIafhUO7L4bGTrJ-ihM_oXmIc8dMS-0l?usp=drive_link
